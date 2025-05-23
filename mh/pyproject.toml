@@ -1,0 +1,33 @@
+[project]
+name = "mindforge_harness"
+version = "0.1.0"
+description = "An autonomous harness system to produce high-quality SE-LLM training data collection at scale."
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "aiodocker>=0.24.0",
+    "datasets>=3.3.2",
+    "uvicorn>=0.34.2",
+    "fastapi>=0.115.12",
+    "gitpython>=3.1.44",
+    "orjson>=3.10.15",
+    "pytest>=8.3.5",
+    "pytest-json-report>=1.5.0",
+    "requests>=2.32.3",
+    "rich>=13.9.4",
+    "tqdm>=4.67.1",
+]
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]  # Search in the current directory
+
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.crt", "*.pem"] # Include all frozen envs

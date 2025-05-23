@@ -8,7 +8,6 @@ Jinja2==3.1.5
 MarkupSafe==2.1.5
 numpy==1.17.5
 packaging==24.0
--e git+https://github.com/pandas-dev/pandas.git@7d736418a907aab3e32f6a9e25fef9b47b1740f5#egg=pandas
 pluggy==1.2.0
 pytest==7.4.4
 python-dateutil==2.9.0.post0

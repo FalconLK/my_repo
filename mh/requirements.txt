@@ -1,0 +1,10 @@
+aiodocker
+aiohttp
+datasets
+gitpython
+orjson
+pytest
+pytest-json-report
+requests
+tqdm
+fastapi
